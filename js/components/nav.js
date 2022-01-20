@@ -20,7 +20,8 @@ function createNav() {
             </div>
         </div>`;
 
-    hamburger()
+    hamburger();
+    navScroll()
 };
 
 function hamburger() {
@@ -31,6 +32,16 @@ function hamburger() {
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
     });
+};
+
+function navScroll() {
+    window.onscroll = function () {
+        if (this.scrollY > 0) {
+            nav.style.boxShadow = "0 3px 10px #00000025";
+        } else {
+            nav.style.boxShadow = "none";
+        }
+    };
 };
 
 export { createNav };

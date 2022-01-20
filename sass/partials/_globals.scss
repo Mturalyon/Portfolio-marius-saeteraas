@@ -1,0 +1,120 @@
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $font-sans-serif;
+    background-color: yellow;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Navigation*/
+nav {
+    background-color: $color-bg-blue;
+    position: sticky;
+    top: 0;
+
+    .nav-container {
+        height: 4rem;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            font-family: $font-sans-serif;
+            color: white;
+            font-size: 1.2rem;
+            .color-name {
+                color: $color-hover-blue;
+            }
+        }
+        li a span {
+            font-size: 8px;
+            color: $color-hover-blue;
+            margin-right: 0.3rem;
+        }
+        ul {
+            display: flex;
+        }
+        ul li a {
+            display: flex;
+            align-items: center;
+            margin: 0 1rem;
+            color: $color-light-blue;
+            &:hover {
+                color: $color-hover-blue;
+                text-decoration: underline;
+            }
+        }
+        /*hamburger*/
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+                background-color: $color-light-blue;
+            }
+        }
+    } 
+}
+
+
+
+/*--MEDIA QUERIES--*/
+@media only screen and (max-width: 700px) {
+    /*Navigation*/
+    nav {
+        .nav-container {
+            width: 90%;
+            .nav-menu {
+                background-color: $color-bg-blue;
+                position: fixed;
+                left: -100%;
+                top: 60px;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                transition: 0.3s;
+                li a {
+                    margin: 0.8rem 0;
+                }
+                li .last-link {
+                    margin-bottom: 1.4rem;
+                }
+            }
+            .nav-menu.active {
+                left: -0.5px;
+            }
+            /*Hamburger*/
+            .hamburger {
+                display: block;
+            }
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+        }
+    }
+}

@@ -1,5 +1,9 @@
 const nav = document.querySelector("nav");
 
+
+
+
+
 function createNav() {
     nav.innerHTML = `
     <div class="nav-container">
@@ -14,14 +18,16 @@ function createNav() {
             </ul>
 
             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
             </div>
         </div>`;
 
     hamburger();
     navScroll()
+
+
 };
 
 function hamburger() {

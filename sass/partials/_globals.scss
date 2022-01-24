@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
     font-family: $font-sans-serif;
     background-color: $color-bg-blue;
+    color: $color-text;
 }
 
 ul {
@@ -19,10 +20,49 @@ a {
 }
 /*Adjustments*/
 .wrapper {
-    width: 100%;
+    width: 70%;
+    margin: auto;
+}
+.flex-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*Sub headings*/
+.sub-heading {
+    font-size: 1.5rem;
+    color: $color-white;
+    position: relative;
+    margin-bottom: 4rem;
+    span {
+        color: $color-light-blue;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 1.5px;
+        background-color: #0bb3d97e;
+        position: absolute;
+        left: -30%;
+        top: 50%;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 1.5px;
+        background-color: #0bb3d97e;
+        position: absolute;
+        right: -30%;
+        top: 50%;
+    }
 }
 /*Navigation*/
 nav {
+    z-index: 5;
     background-color: $color-bg-blue;
     position: sticky;
     top: 0;

@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -513,5 +517,112 @@ header h2 span {
   border-color: #0BB3D9;
   background-color: #07daf2;
   color: #081826;
+}
+
+/*Contact*/
+.contact {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact i {
+  font-size: 1.5rem;
+}
+
+.contact h3 {
+  margin-bottom: 2rem;
+}
+
+.contact .description-container {
+  margin-bottom: 4rem;
+}
+
+.contact .contact-container {
+  color: #2081BE;
+  margin-bottom: 3rem;
+}
+
+.contact .contact-container > * {
+  margin-bottom: 2rem;
+}
+
+.contact .socials-container a {
+  color: #6492AF;
+}
+
+.contact .socials-container a:hover {
+  color: #07DBF2;
+}
+
+.contact .socials-container > * {
+  margin: 0 0.5rem;
+}
+
+.contact .copyright {
+  margin-top: 4rem;
+}
+
+/*Project List*/
+.project-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.project-wrapper .title-row {
+  padding: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #2081BE;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.project-wrapper .title-row > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.project-wrapper .project-row {
+  background-color: #05325900;
+  border: 2px solid #053259;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+  top: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-wrapper .project-row:hover {
+  background-color: #053259;
+  top: -1px;
+}
+
+.project-wrapper .project-row > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #6492AF;
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+.project-wrapper .project-row > *:hover {
+  color: #07DBF2;
+  text-decoration: underline;
+}
+
+.project-wrapper .project-row i {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -84,3 +84,140 @@ header {
 .experience-bg {
     background-color: $color-dark-blue;
 }
+.experience {
+    text-align: center;
+    padding: 8rem 0;
+    & > * {
+        margin-bottom: 3rem;
+    }
+    .experience-heading span {
+        color: $color-hover-blue;
+    }
+    .developer-container i {
+        margin: 0 1rem;
+    }
+    i {
+        color: $color-hover-blue;
+        font-size: 2rem;
+    }
+    .text-blue {
+        color: $color-light-blue;
+    }
+    .experience-container {
+        width: 500px;
+    }
+    .experience-row {
+        display: flex;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid $color-light-blue;
+        padding-bottom: 4px;
+    }
+    .experience-row p {
+        color: $color-white;
+        flex: 1;
+        position: relative;
+        top: 2px;
+        transition: all 0.1s ease-in-out;
+        &:hover {
+            top: -2px;
+            color: $color-hover-blue;
+            text-shadow: 0 3px 6px #07daf25b;
+        }
+    }
+}
+
+/*Projects*/
+.projects {
+    padding: 8rem 0;
+    a {
+        color: $color-text;
+        display: inline-block;
+    }
+    .projects-container {
+        margin-bottom: 8rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card-link, .socials-container {
+        padding: 0 1.5rem;
+    }
+    .card-link {
+        padding-top: 1.5rem;
+        height: 100%;
+    }
+    .card-title-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    .card-title-container h4 {
+        color: $color-white;
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-right: 0.5rem;
+        transition: all 0.2s ease-in-out;
+    }
+    .card-title-container i {
+        color: $color-hover-blue;
+        position: relative;
+        right: 15px;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+    }
+    .socials-container {
+        padding-bottom: 1.5rem;
+    }
+    .socials-container i {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+        &:hover {
+            color: $color-hover-blue;
+        }
+    }
+    .project-card {
+        margin: 2rem 0.5rem 0rem 0.5rem;
+        background-color: $color-dark-blue;
+        height: 280px;
+        width: 260px;
+        box-shadow: 0 5px 10px #00000049;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        top: 10px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            top: -7px;
+            background-color: #042b4d;
+        }
+        &:hover .card-title-container h4 {
+            color: $color-hover-blue;
+        }
+        &:hover .card-title-container i {
+            right: -5px;
+            opacity: 1;
+        }
+    }
+    .button-container .button {
+        width: 130px;
+        text-align: center;
+        margin: 0 1rem;
+        color: $color-hover-blue;
+        font-size: 1.2rem;
+        font-weight: bold;
+        box-shadow: 0 5px 10px #00000049;
+        padding: 1rem;
+        border: 2px solid $color-hover-blue;
+        background-color: #07daf200;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        top: 5px;
+        &:hover {
+            top: -2px;
+            border-color: $color-border-blue;
+            background-color: #07daf2;
+            color: $color-bg-blue;
+        }
+    }
+}

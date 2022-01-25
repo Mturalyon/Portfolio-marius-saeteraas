@@ -1,9 +1,14 @@
 /*Header*/
 header {
+    top: 20px;
+    opacity: 0.1;
+    position: relative;
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.7s;
     .heading-container {
         margin-bottom: 2rem;
         display: flex;
@@ -27,6 +32,11 @@ header {
 
 /*About*/
 .about {
+    top: 30px;
+    opacity: 0.2;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
     margin-bottom: 15rem;
     .about-content {
         width: 100%;
@@ -85,6 +95,11 @@ header {
     background-color: $color-dark-blue;
 }
 .experience {
+    right: 30px;
+    opacity: 0.2;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
     text-align: center;
     padding: 8rem 0;
     & > * {
@@ -128,6 +143,11 @@ header {
 
 /*Projects*/
 .projects {
+    left: 30px;
+    opacity: 0.2;
+    position: relative;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
     padding: 8rem 0;
     a {
         color: $color-text;
@@ -224,7 +244,12 @@ header {
 
 /*Contact*/
 .contact {
-    padding: 4rem 0;
+    bottom: 30px;
+    opacity: 0.2;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.3s;
+    padding: 4rem 0 8rem 0;
     text-align: center;
     i {
         font-size: 1.5rem;
@@ -301,3 +326,41 @@ header {
         font-size: 1.5rem;
     }
 }
+
+/*--ANIMATIONS--*/
+.bullet {
+    background-color: white;
+    height: 2px;
+}
+.bullet1 {
+    position: relative;
+    left: 2%;
+    top: 0px;
+    width: 25%;
+    background-color: $color-hover-blue;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.5s;
+}
+.bullet2 {
+    position: relative;
+    left: 150px;
+    top: 100px;
+    width: 20%;
+    background-color: $color-light-blue;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.5s;
+}
+.bullet3 {
+    position: relative;
+    left: 4%;
+    top: 200px;
+    width: 30%;
+    background-color: $color-text;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+/*MEDIA QUERIES*/

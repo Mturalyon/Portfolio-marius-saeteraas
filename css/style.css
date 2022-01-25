@@ -209,6 +209,9 @@ nav .nav-container .hamburger .bar {
 
 /*Header*/
 header {
+  top: 20px;
+  opacity: 0.1;
+  position: relative;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,6 +223,10 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.7s;
+          transition-delay: 0.7s;
 }
 
 header .heading-container {
@@ -253,6 +260,13 @@ header h2 span {
 
 /*About*/
 .about {
+  top: 30px;
+  opacity: 0.2;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
   margin-bottom: 15rem;
 }
 
@@ -330,6 +344,13 @@ header h2 span {
 }
 
 .experience {
+  right: 30px;
+  opacity: 0.2;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
   text-align: center;
   padding: 8rem 0;
 }
@@ -387,6 +408,13 @@ header h2 span {
 
 /*Projects*/
 .projects {
+  left: 30px;
+  opacity: 0.2;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
   padding: 8rem 0;
 }
 
@@ -521,7 +549,14 @@ header h2 span {
 
 /*Contact*/
 .contact {
-  padding: 4rem 0;
+  bottom: 30px;
+  opacity: 0.2;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+  padding: 4rem 0 8rem 0;
   text-align: center;
 }
 
@@ -625,4 +660,51 @@ header h2 span {
 .project-wrapper .project-row i {
   font-size: 1.5rem;
 }
+
+/*--ANIMATIONS--*/
+.bullet {
+  background-color: white;
+  height: 2px;
+}
+
+.bullet1 {
+  position: relative;
+  left: 2%;
+  top: 0px;
+  width: 25%;
+  background-color: #07DBF2;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.bullet2 {
+  position: relative;
+  left: 150px;
+  top: 100px;
+  width: 20%;
+  background-color: #2081BE;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.bullet3 {
+  position: relative;
+  left: 4%;
+  top: 200px;
+  width: 30%;
+  background-color: #6492AF;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+/*MEDIA QUERIES*/
 /*# sourceMappingURL=style.css.map */

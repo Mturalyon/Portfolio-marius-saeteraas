@@ -260,7 +260,7 @@ header h2 span {
 
 /*About*/
 .about {
-  top: 30px;
+  top: 10px;
   opacity: 0.2;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
@@ -344,7 +344,7 @@ header h2 span {
 }
 
 .experience {
-  right: 30px;
+  right: 10px;
   opacity: 0.2;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
@@ -408,7 +408,7 @@ header h2 span {
 
 /*Projects*/
 .projects {
-  left: 30px;
+  left: 10px;
   opacity: 0.2;
   position: relative;
   -webkit-transition: all 0.3s;
@@ -549,7 +549,7 @@ header h2 span {
 
 /*Contact*/
 .contact {
-  bottom: 30px;
+  bottom: 10px;
   opacity: 0.2;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;

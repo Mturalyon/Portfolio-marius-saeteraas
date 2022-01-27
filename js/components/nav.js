@@ -14,7 +14,7 @@ function createNav() {
                 <li><a href="/index.html#experience"><span><i class="fas fa-circle fa-xs"></i></span>Skills</a></li>
                 <li><a href="/index.html#projects"><span><i class="fas fa-circle fa-xs"></i></span>Projects</a></li>
                 <li><a href="/index.html#contact"><span><i class="fas fa-circle fa-xs"></i></span>Contact</a></li>
-                <li><a href="" class="last-link"></i>CV</a></li>
+                <li><a href="./cv.pdf" target="_blank" class="last-link"></i>CV</a></li>
             </ul>
 
             <div class="hamburger">

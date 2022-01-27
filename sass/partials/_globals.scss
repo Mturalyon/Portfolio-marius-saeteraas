@@ -164,4 +164,19 @@ nav {
 
         }
     }
+    /*Wrapper*/
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .sub-heading {
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
 }

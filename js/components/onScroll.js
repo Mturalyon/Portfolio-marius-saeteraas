@@ -19,7 +19,7 @@ function onScroll() {
             projectsSection.style.opacity = "1";
             projectsSection.style.left = "0px";
         }
-        if (scrolled >= 3000) {
+        if (scrolled >= 2900) {
             contactSection.style.opacity = "1";
             contactSection.style.bottom = "0px";
         }
